@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>David Torres - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          David Torres 
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          davidf.torress@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +573108753809
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommedations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://queleerquequieroleer.com/wp-content/uploads/2019/05/tumblr_nh94saQCEn1qzco77o1_500.gif" class="profile_image" />
+      </div> 
+      <div>
+          <h1 style="text-align:center;">
+            Hi, I'm David Torres! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p style="text-align:justify;">
+            I am an electronic engineer with 3 years of experience working in industrial automation. 
+            I've implemented diferent projects implemented different projects using sensors, PLC's, motors, variable speed drives, process controllers... 
+            For different applications in various areas of work such as: agriculture, packaging, ovens, etc.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/altus.png"/>
+            <h6>Altus</h6>
+            <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/altium.png"/>
+            <h6>Altium Designer</h6>
+            <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/siemens.png"/>
+            <h6>Siemens</h6>
+            <p>2 years experience</p>
+        </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Pumping system</h3>
+            <ul>
+              <li>Implemented and programming a pumping system for a building, using two Speed drivers from INVERTEK and several pressure sensors from PNOMEK </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>PID control in ovens</h3>
+            <ul>
+              <li>Implemented and programming several PID control for diferents applications relative to ovens</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Water Level Meter System</h3>
+            <ul>
+              <li>Implemented a Water Level Meter System in a reserve supply plant in a Building </li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          David's attention to detail and dedication were evident throughout our collaboration. 
+          His expertise and communication skills exceeded my expectations. I highly endorse him!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          David's expertise surpassed my expectations.
+          His meticulous approach and exceptional service made a significant impact on my project's success.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with David was a delight. His professionalism, coupled with timely delivery, ensured a seamless experience.
+          Highly recommended for any project!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+        <h3><!-- Add appropriate text here-->
+            Thanks for your feedback,
+             your recommendations are welcome!!
+        </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
